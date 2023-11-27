@@ -1,0 +1,12 @@
+variable traffic_manager{}
+variable routing_method{}
+variable dns_name{}
+variable ttl{}
+variable tm_protocol{}
+variable tm_port{}
+variable tm_path{}
+variable tm_interval{}
+variable tm_timeout{}
+variable failure_num{}
+variable tag{}
+variable primary_resource_group_name{}
