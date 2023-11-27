@@ -33,6 +33,14 @@ pipeline {
                 }
             }
         }
+
+        stage('login')
+           steps{
+               script{
+                   sh 'az login'
+               }
+           }
+   }
          stage('Terraform plan') {
             steps {
                 script {
