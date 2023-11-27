@@ -34,7 +34,7 @@ pipeline {
             }
         }
 
-        stage('login')
+        stage('login'){
            steps{
                script{
                    sh 'az login'
