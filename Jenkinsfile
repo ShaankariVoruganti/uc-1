@@ -4,12 +4,12 @@ pipeline {
    stages {
        stage('git clone'){
       steps{
-        sh 'git clone https://github.com/ShaankariVoruganti/sql-vm'
+        sh 'git clone https://github.com/ShaankariVoruganti/uc-1'
       }
     }
         stage('Clear destination') {
        steps {
-        sh 'rm -rf sql-vm/sql-repl'
+        sh 'rm -rf uc-1'
          }
        }
  
