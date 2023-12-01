@@ -11,12 +11,7 @@ pipeline {
         sh 'git clone https://github.com/ShaankariVoruganti/uc-1'
       }
     }
-    stage('build') {
-      steps {
-          sh 'az login --service-principal -u $MY_CRED_CLIENT_ID -p $MY_CRED_CLIENT_SECRET'
-      }
-    }
-  
+
         stage('Clear destination') {
        steps {
         sh 'rm -rf uc-1'
@@ -43,7 +38,12 @@ pipeline {
                 }
             }
         }
-
+    stage('build') {
+      steps {
+          sh 'az login --service-principal -u $MY_CRED_CLIENT_ID -p $MY_CRED_CLIENT_SECRET'
+      }
+    }
+  
         
          stage('Terraform plan') {
             steps {
