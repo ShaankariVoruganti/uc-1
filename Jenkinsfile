@@ -1,6 +1,16 @@
 pipeline {
     agent any
+    environment {
+      MY_CRED = credentials('AzureServicePrincipal')
+  }
 
+  stages {
+    stage('build') {
+      steps {
+          sh 'az login --service-principal -u $MY_CRED_CLIENT_ID -p $MY_CRED_CLIENT_SECRET'
+      }
+    }
+  }
    stages {
        stage('git clone'){
       steps{
@@ -34,13 +44,7 @@ pipeline {
             }
         }
 
-        stage('login'){
-           steps{
-               script{
-                   sh 'az login'
-               }
-           }
-   }
+        
          stage('Terraform plan') {
             steps {
                 script {
