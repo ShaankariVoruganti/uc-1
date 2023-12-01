@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    environment {
-      MY_CRED = credentials('AzureServicePrincipal')
-  }
-
 
    stages {
        stage('git clone'){
@@ -38,9 +34,9 @@ pipeline {
                 }
             }
         }
-    stage('build') {
+    stage(login) {
       steps {
-          sh 'az login --service-principal -u $MY_CRED_CLIENT_ID -p $MY_CRED_CLIENT_SECRET'
+          sh 'az login'
       }
     }
   
