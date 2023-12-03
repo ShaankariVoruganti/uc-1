@@ -81,8 +81,8 @@ sql2_username                          = "test-un2"
 
 display_name                           =  "parentgroup"
 
-primary_key_vault_name                 =  "primary-keyvault357"
-secondary_key_vault_name               =  "secondary-keyvault357"
+primary_key_vault_name                 =  "primary-keyvault3587"
+secondary_key_vault_name               =  "secondary-keyvault3587"
 soft_delete_retention_days             =  7
 purge_protection_enabled               =  false
 sku_name                               =  "standard"
