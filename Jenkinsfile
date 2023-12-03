@@ -2,9 +2,9 @@ pipeline {
     agent any
 
    stages {
-       stage('git clone'){
+       stage('checkout'){
       steps{
-        sh 'git clone https://github.com/ShaankariVoruganti/uc-1'
+        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ShaankariVoruganti/uc-1']])
       }
     }
 
@@ -34,11 +34,7 @@ pipeline {
                 }
             }
         }
-    stage(login) {
-      steps {
-          sh 'az login'
-      }
-    }
+    
   
         
          stage('Terraform plan') {
