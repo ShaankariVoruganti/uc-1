@@ -38,4 +38,7 @@ resource "azurerm_mssql_virtual_machine" "sqlvm" {
   sql_connectivity_type=var.sql_conn_type
   sql_connectivity_update_password=var.sql1_password
   sql_connectivity_update_username=var.sql1_username
+timeouts{
+create= "20m"
+delete= "20m"
 }
