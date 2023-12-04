@@ -1,4 +1,5 @@
 primary_resource_group_name            =  "primary-rg"
+prevent_dlt                            = false
 primary_location                       =  "UK South"
 primary_vnet                           =  "primary-vnet"
 primary_vnet_addr                      =  ["10.0.0.0/16"]
