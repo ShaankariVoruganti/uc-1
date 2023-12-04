@@ -6,3 +6,5 @@ variable "secondary_location" {
 type=string
 description = "Azure region for the Resource Group"
 }
+variable "prevent_dlt" {
+}
