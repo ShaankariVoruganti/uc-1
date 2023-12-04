@@ -2,6 +2,7 @@ module "resource_group" {
   source                      = "./modules/resource-groups/primary_resource_group"
   primary_resource_group_name = var.primary_resource_group_name
   primary_location            = var.primary_location
+  prevent_dlt                 = var.prevent_dlt
 }
 
 module "primary_vnet" {
