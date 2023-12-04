@@ -2,7 +2,6 @@ module "resource_group" {
   source                      = "./modules/resource-groups/primary_resource_group"
   primary_resource_group_name = var.primary_resource_group_name
   primary_location            = var.primary_location
-  prevent_dlt                 = var.prevent_dlt
 }
 
 module "primary_vnet" {
@@ -46,7 +45,6 @@ module "secondary_resource_group"{
   source                        = "./modules/resource-groups/secondary_resource_group"
   secondary_resource_group_name = var.secondary_resource_group_name
   secondary_location            = var.secondary_location
-  prevent_dlt                   = var.prevent_dlt
 }
 
 module "secondary_vnet" {
@@ -199,7 +197,6 @@ module "traffic_manager_rg"{
   source                        = "./modules/resource-groups/traffic_manager_rg"
   tf_resource_group_name        = var.tf_resource_group_name
   tf_location                   = var.tf_location
-  prevent_dlt                   = var.prevent_dlt
 } 
 module "traffic_manager_profile" {
   source                                = "./modules/traffic-manager/traffic_manager_profile"
