@@ -5,5 +5,3 @@ variable "primary_resource_group_name" {
 variable "primary_location" {
   description = "Azure region for the Resource Group"
 }
-variable "prevent_dlt" {
-}
