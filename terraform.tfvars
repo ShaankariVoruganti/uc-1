@@ -79,7 +79,7 @@ vm2_admin_password                     = "Password1234!"
 sql2_password                          = "test-pw"
 sql2_username                          = "test-un2"
 
-display_name                           =  "parentgroup"
+display_name                           =  "childgroup"
 
 primary_key_vault_name                 =  "primary-keyvault3527"
 secondary_key_vault_name               =  "secondary-keyvault35827"
