@@ -51,7 +51,7 @@ domain_name2                           = "vm2-dns"
 primary_vm                             = "vm-1"
 primary_vm_size                        = "Standard_D2S_v3"
 image_publisher                        = "MicrosoftSQLServer"
-image_offer                            = "SQL2019-WS2019"
+image_offer                            = "SQL2022-WS2022"
 image_sku                              = "SQLDEV"
 image_version                          = "latest"
 OSdisk1_name                           = "test-OS1Disk"
@@ -81,8 +81,8 @@ sql2_username                          = "test-un2"
 
 display_name                           =  "childgroup"
 
-primary_key_vault_name                 =  "primary-vault3527"
-secondary_key_vault_name               =  "secondary-vault3527"
+primary_key_vault_name                 =  "primary-vault357"
+secondary_key_vault_name               =  "secondary-vault357"
 soft_delete_retention_days             =  7
 purge_protection_enabled               =  false
 sku_name                               =  "standard"
