@@ -56,8 +56,8 @@ pipeline {
                // script {
                    // sh 'terraform destroy -auto-approve'
                 //}
-            }
-        }
+            //}
+        //}
 
     }
 }
