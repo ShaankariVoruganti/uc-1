@@ -30,7 +30,7 @@ nic1                                   = "test-NIC1"
 ipconfig1                              = "ip1"
 private_ip_alloc1                      = "Dynamic"
 vm1_pip_alloc                          = "Dynamic"
-domain_name1                           = "vm1-dns"  
+domain_name1                           = "1vm-dns"  
 
 secondary_resource_group_name          =  "secondary-rg"
 secondary_location                     =  "north europe"
@@ -46,7 +46,7 @@ nic2                                   = "test-NIC2"
 ipconfig2                              = "ip2"
 private_ip_alloc2                      = "Dynamic"
 vm2_pip_alloc                          = "Dynamic"
-domain_name2                           = "vm2-dns"
+domain_name2                           = "2vm-dns"
 
 primary_vm                             = "vm-1"
 primary_vm_size                        = "Standard_D2S_v3"
@@ -81,8 +81,8 @@ sql2_username                          = "test-un2"
 
 display_name                           =  "childgroup"
 
-primary_key_vault_name                 =  "primary-vault3570"
-secondary_key_vault_name               =  "secondary-vault3570"
+primary_key_vault_name                 =  "primary-vault888"
+secondary_key_vault_name               =  "secondary-vault888"
 soft_delete_retention_days             =  7
 purge_protection_enabled               =  false
 sku_name                               =  "standard"
