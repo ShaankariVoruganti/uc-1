@@ -63,13 +63,13 @@ pipeline {
                 }
             }
         }
-          stage('Terraform Destroy') {
-            steps {
-                script {
-                    sh 'terraform destroy'
-                }
-            }
-        }
+          //stage('Terraform Destroy') {
+            //steps {
+                //script {
+                    //sh 'terraform destroy'
+                //}
+            //}
+        //}
 
     }
 }
