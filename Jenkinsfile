@@ -2,9 +2,15 @@ pipeline {
     agent any
 
    stages {
-       stage('checkout'){
+       //stage('checkout'){
+      //steps{
+        //checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ShaankariVoruganti/uc-1']])
+      //}
+    //}
+
+       stage('git clone'){
       steps{
-        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ShaankariVoruganti/uc-1']])
+        sh 'git clone https://github.com/ShaankariVoruganti/uc-1'
       }
     }
 
