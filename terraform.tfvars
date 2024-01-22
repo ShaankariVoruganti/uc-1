@@ -94,14 +94,14 @@ storage_permissions                    =  [
       "Get",
     ]
 secret1_name                           =  "clientID"
-secret1_value                          =  "456be59d-6ca3-4bad-aae7-6d459c12e842"
+secret1_value                          =  "66a23c6d-8bc8-47e9-ad5e-e90188d95094"
 secret2_name                           =  "clientsecret"
-secret2_value                          =  "WBy8Q~hCcBioeCOJI0~Y_QOAzizm7KHWUt5stbp."
+secret2_value                          =  "Ien8Q~OhuPmx6Gh4eiAAVVfBCgXsYbFLVqoQ_dAo"
 secret3_name                           =  "tenantID"
-secret3_value                          =  "df6f2c79-127e-417e-9da0-8481f6564020"
+secret3_value                          =  "fe207e2c-db85-4075-b359-f6c776b0c4fd"
 secret4_name                           =  "subscriptionID"
-secret4_value                          =  "14137e7d-37c1-4a1a-9903-9cdb2f84121e"
-object_id                              =  "cc5c5b62-9df7-4222-a458-e5925fd2d956"
+secret4_value                          =  "462e0279-be5d-4970-af1b-28ef83229c16"
+object_id                              =  "c837cd14-9e8a-4890-ab88-1b9935e81c48"
 
 tf_resource_group_name                 = "tf_rg"
 tf_location                            = "centralus"
